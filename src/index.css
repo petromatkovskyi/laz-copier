@@ -1,0 +1,58 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.output {
+  border-left: 1px solid black;
+  flex: 1 auto;
+}
+
+.laz-list > li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 0.2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.laz-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.status.success {
+  background: green;
+}
+
+.status.waiting {
+  background: yellow;
+}
+
+.status.error {
+  background: red;
+}
